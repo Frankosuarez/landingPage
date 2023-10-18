@@ -19,8 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const inscripcionListItem = document.createElement("li");
       const inscripcionLink = document.createElement("a");
       inscripcionLink.href = `formulario_${carrera.toLowerCase().replace(/ /g, "_")}.html`;
-      inscripcionLink.textContent = `Tecnicatura Superior en ${carrera}`;
       inscripcionListItem.appendChild(inscripcionLink);
       inscripcionList.appendChild(inscripcionListItem);
     });
-  });
+  }); 
