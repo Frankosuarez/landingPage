@@ -1,42 +1,24 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-image: url('Diseño\ sin\ título.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #494949;
-  background-color: #434343; /* Fondo gris de respaldo */
-}  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
   
+  font-family: Arial, sans-serif; 
+  color: #ffffff;
+
+  background-image: url('Diseño\ sin\ título.jpg');  
+  background-size: cover; 
+  background-repeat: no-repeat;
+  
+}  
   nav ul li {
     display: inline;
     margin-right: 10px;
   }
   
-  nav ul li a {
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
   h2 {
     margin-top: 0;
-    color: rgb(89, 189, 233);
-  }
-  
-  ul {
-    list-style-type: disc;
+    color: rgb(254, 254, 254);
   }
   
   #inscripcion-list li a {
-    text-decoration: none;
     color: rgba(41, 234, 218, 0.834);
   }
