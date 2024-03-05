@@ -1,25 +1,22 @@
 body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-image: url('Diseño\ sin\ título.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  margin: 0;/* Elimina los márgenes alrededor del cuerpo del documento.*/
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
 
-  font-family: Arial, sans-serif; /* Establece la fuente del texto en Arial,*/
-  color: #ffffff;/*establece el color del texto*/
+h2 {
+  margin-top: 0;
+  color: rgb(254, 254, 254);
+}
 
-  background-image: url('Diseño\ sin\ título.jpg');  /*pone la imagen de fondo*/
-  background-size: cover; /*Hace que la imagen de fondo cubra todo el área disponible del cuerpo del documento sin distorsionarla.*/
-  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita tanto horizontal como verticalmente.*/
-
-}  
-  nav ul li { /*es lo de ariba a la izquierda*/
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  h2 { /* establecen un margen superior de 0 píxeles y cambian el color del texto a un tono de azul (rgb(89, 189, 233)).*/
-    margin-top: 0;
-    color: rgb(254, 254, 254);/*pinta carreras,inscripcion y promocion*/
-  }
-  
-  #inscripcion-list li a { /*establecen estilos para los enlaces dentro de elementos de lista con el ID "inscripcion-list", eliminando la decoración de texto y cambiando el color del texto a una tonalidad de turquesa (rgba(41, 234, 218, 0.834)).*/
-    color: rgba(41, 234, 218, 0.834);
-  }
+#inscripcion-list li a {
+  color: rgba(41, 234, 218, 0.834);
+}
