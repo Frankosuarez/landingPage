@@ -12,27 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const carrerasList = document.getElementById("carreras-list");
     const inscripcionList = document.getElementById("inscripcion-list");
   
-    const inscripcionLinks = [
-      'https://drive.google.com/file/d/1hy85EldKwshN8YbBfOXo8CHPcaJPdSPL/view?usp=sharing',
-      'https://drive.google.com/file/d/1kLJT_OloB1yznUkwe0a2Zsjz3VQYJt3h/view?usp=sharing',
-      'https://drive.google.com/file/d/1lB9fNxMWr8zJroFjYnkBiCAY4NoyYfoY/view?usp=sharing',
-      'https://drive.google.com/file/d/1RZsRj2ep2KuZezVRSzXt-rXDYZI3cjzg/view?usp=sharing',
-      'https://drive.google.com/file/d/10J_D4vgcY8nGj5pbI9ey1D3HL8H7_lxR/view?usp=sharing',
-      'https://drive.google.com/file/d/1OT8Vqg96OWkyQl4fMY0raqS9i4EhegyM/view?usp=sharing',
-      'https://drive.google.com/file/d/1bPo5p4rIYZ-qu5OiDjZ0Z3f9aFuiSuLD/view?usp=sharing'
-    ];
-  
-    carreras.forEach(function(carrera, index) {
-      const carrerasListItem = document.createElement("li");
-      carrerasListItem.textContent = carrera;
-      carrerasList.appendChild(carrerasListItem);
-  
-      const inscripcionListItem = document.createElement("li");
-      const inscripcionLink = document.createElement("a");
-  
-      inscripcionLink.href = inscripcionLinks[index];
-      inscripcionLink.textContent = ` ${carrera}`;
-      inscripcionListItem.appendChild(inscripcionLink);
-      inscripcionList.appendChild(inscripcionListItem);
-    });
-  });
+    // Ruta de la carpeta que contiene los PDF
+    const pdfFolder = "pdfs/";
+
+    // Crear la lista de carreras y enlaces de inscripción
+    for (let i = 0; i < carreras.length; i++) {
+        const carreraItem = document.createElement("li");
+        const carreraLink = document.createElement("a");
+        carreraLink.textContent = carreras[i];
+        carreraLink.href = pdfFolder + carreras[i];
+        carreraLink.target = "_blank"; // Abre enlace en una nueva pestaña
+        carreraItem.appendChild(carreraLink);
+        carrerasList.appendChild(carreraItem);
+    }
+});
