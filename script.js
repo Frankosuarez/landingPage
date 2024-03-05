@@ -27,13 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
     carrerasListItem.textContent = carrera;
     carrerasList.appendChild(carrerasListItem);
 
-    const inscripcionListItem = document.createElement("li");//crea un elemento de tipo lista
-    const inscripcionLink = document.createElement("a");//crea un elemento de tipo link
+    const inscripcionListItem = document.createElement("li");
+    const inscripcionLink = document.createElement("a");
 
-    inscripcionLink.href = inscripcionLinks[index]; //asigna ese link al indice actual del arreglo links
-    inscripcionLink.textContent = ` ${carrera}`; // le pone el nombre de la carrera del indice actual
-    inscripcionListItem.appendChild(inscripcionLink); // Agrega el enlace de inscripción al elemento de lista
-    inscripcionList.appendChild(inscripcionListItem); // Agrega el elemento de lista a la lista de inscripción
-    
+    inscripcionLink.href = inscripcionLinks[index];
+    inscripcionLink.textContent = ` ${carrera}`;
+    inscripcionListItem.appendChild(inscripcionLink);
+    inscripcionList.appendChild(inscripcionListItem);
   });
 });
