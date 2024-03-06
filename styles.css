@@ -1,16 +1,14 @@
 body {
+
   margin: 0;
 
   font-family: Arial, sans-serif;
-  color: white;
+  color:white;
 
   background-image: url('Fondo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }   
-  h2 {
-    color: white;
-  }
   
   #inscripcion-list li a {
     color: rgba(41, 234, 218, 0.834);
