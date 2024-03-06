@@ -1,5 +1,4 @@
 body {
-
   margin: 0;
 
   font-family: Arial, sans-serif;
@@ -8,16 +7,9 @@ body {
   background-image: url('Fondo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-
-}  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
+}   
   h2 {
-    margin-top: 0;
-    color: rgb(254, 254, 254);
+    color: white;
   }
   
   #inscripcion-list li a {
